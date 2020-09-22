@@ -20,7 +20,7 @@
             <fieldset>
                 <legend>User form</legend>
         <textarea name="user.comments"  cols="30" rows="30" id="comment"disabled ="disabled" ></textarea> 
-        <ul>
+        <ul style = "list-style: none;"> 
             
                 <li><label for="images">Select images</label></li> 
                 <li><input type="file" id="img" name="img" accept=".jpg"></li><br>
@@ -38,9 +38,17 @@
             <li><input type="checkbox" name="donkey">donkey</li>
 
             <label for="login">login</label><br><br>
-            <input type ="password" name="login" id="password" placeholder="password"><br>
-            <input type="submit" value="submit">
-                </ul>
+                <input type ="password" name="user.password" id="login" placeholder="password"><br>
+                <input type="submit" value="submit">
+            <label for = "soda">Pick your favorite soda</label>
+                
+                <li><input type ="radio" id="soda" name="user.soda">Fanta</li>
+                <li><input type ="radio" id="soda" name="user.soda">sprite</li>
+                <li><input type ="radio" id="soda" name="user.soda">coke</li>
+                <li><input type ="radio" id="soda" name="user.soda">pepi</li>
+
+
+        </ul>
             </fieldset>
     </form>
 
