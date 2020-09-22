@@ -12,17 +12,35 @@
     
     <form action="#" method="POST">
         <ul>
-                <legend>User form</legend>
                 <li><label for='DOB'>Date of birth mm/dd/yyyy</label></li>
                 <li><input type="text" id="DOB" name="user.DOB"></li>
 
                 <li><label for ="commets">Commets </label></li><br>
         </ul>
             <fieldset>
-        <textarea name="user.comments"  cols="30" rows="30" id="comment"></textarea> 
-            <li>
-                <button type="submit">Submit your test</button>
-            </li>
+                <legend>User form</legend>
+        <textarea name="user.comments"  cols="30" rows="30" id="comment"disabled ="disabled" ></textarea> 
+        <ul>
+            
+                <li><label for="images">Select images</label></li> 
+                <li><input type="file" id="img" name="img" accept=".jpg"></li><br>
+            
+            
+                <button type="submit">Submit your test</button><br>
+                <li><input type="reset" value="reset" disabled="disabled"></li>
+            
+
+
+            <label for="ingredients">Pizza ingredients</label><br>
+        <li> <input type="checkbox" name="chesse" id="user.ingredients.cheese">chesse</li>
+        <li> <input type=checkbox name="flour" id="user.ingredients.flour">flour</li>
+        <li> <input type="checkbox" name="tomato" id="user.ingredients.">cow</li> 
+            <li><input type="checkbox" name="donkey">donkey</li>
+
+            <label for="login">login</label><br><br>
+            <input type ="password" name="login" id="password" placeholder="password"><br>
+            <input type="submit" value="submit">
+                </ul>
             </fieldset>
     </form>
 
